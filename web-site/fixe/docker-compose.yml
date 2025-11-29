@@ -10,5 +10,5 @@ services:
       # Replace ${WEB_SITE_SOURCE} with the absolute path to your website files
       # or set the environment variable WEB_SITE_SOURCE before running.
       # Default is ./html if not set.
-      - ${WEB_SITE_SOURCE:-./html}::/var/www/html
+      - /home/baptistep/Documents/web/site-web:/var/www/html
     restart: always

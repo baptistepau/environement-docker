@@ -9,3 +9,6 @@ services:
     volumes:
       - /Users/baptistep/Documents/developpement-web/arrera-site:/var/www/html
     restart: always
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

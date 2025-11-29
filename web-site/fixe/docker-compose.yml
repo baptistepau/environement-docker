@@ -12,3 +12,6 @@ services:
       # Default is ./html if not set.
       - /home/baptistep/Documents/web/site-web:/var/www/html
     restart: always
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

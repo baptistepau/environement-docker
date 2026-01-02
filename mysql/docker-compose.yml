@@ -26,3 +26,8 @@ services :
       - mysql
 volumes:
   mysql_data:
+
+networks:
+  default:
+    name: environement-network
+    external: true

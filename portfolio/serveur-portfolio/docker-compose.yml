@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  portfolio_web:
+    build: .
+    container_name: portfolio_web
+    ports:
+      - "2004:80"
+    volumes:
+      - /home/baptistep/portfolio/:/var/www/html
+    restart: always

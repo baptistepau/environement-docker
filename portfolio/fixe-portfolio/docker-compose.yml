@@ -5,7 +5,7 @@ services:
     build: .
     container_name: portfolio_web
     ports:
-      - "8080:80"
+      - "2004:80"
     volumes:
       # Replace ${WEB_SITE_SOURCE} with the absolute path to your website files
       # or set the environment variable WEB_SITE_SOURCE before running.

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: apache_web
+    ports:
+      - "8080:80"
+    volumes:
+      - /Users/baptistep/Documents/developpement-web/arrera-site:/var/www/html
+    restart: always
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  default:
+    name: environement-network
+    external: true

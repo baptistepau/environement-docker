@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: apache_web
+    ports:
+      - "8080:80"
+    volumes:
+      # Replace ${WEB_SITE_SOURCE} with the absolute path to your website files
+      # or set the environment variable WEB_SITE_SOURCE before running.
+      # Default is ./html if not set.
+      - /home/baptistep/Documents/web/site-web:/var/www/html
+    restart: always
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
